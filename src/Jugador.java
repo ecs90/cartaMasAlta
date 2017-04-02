@@ -1,3 +1,33 @@
+/*
+clase publica Jugador{
+    privado cadena nombre;
+    privado entero puntos;
+    privado Carta carta;
+    publico definirCarta(Carta c){
+        carta=c;
+    }
+    publico Carta valorCarta(Carta carta){
+        devolver carta;
+    }
+    publico sumarUnPunto(){
+        puntos=valorPuntos()+1;
+    }
+    publico valorPuntos(){
+        devolver puntos;
+    }
+    publico devuelveCarta(){
+        cartasUsadas.agregar(carta);
+        carta=nulo;
+        devolver carta;
+    }
+    publico Jugador(cadena n)
+        nombre=n;
+    }
+    publico cadena valorNombre(){
+        devolver nombre;
+    }
+*/
+
 public class Jugador {
     private String nombre;
     private int puntos;
@@ -11,16 +41,17 @@ public class Jugador {
         return carta;
     }
     
-    public void sumarunpunto(){
-        
+    public void sumarUnPunto(){
+        puntos=getPuntos()+1;
     }
 
     public int getPuntos() {
         return puntos;
     }
     
-    public Carta devuelvecarta(){
-        
+    public Carta devuelveCarta(){
+        // Falta cuerpo de metodo
+        return carta;
     }
 
     public Jugador(String nombre) {
