@@ -39,22 +39,13 @@ public class Baraja {
     }
 
     public Baraja() {
+        String[] palos = {"copa","basto","oro","espada"};
         
         for (int i = 1; i < 13; i++) {
-            Carta carta = new Carta("copa",i);
-            cartasUsadas.add(carta);
-        }
-        for (int i = 1; i < 13; i++) {
-            Carta carta = new Carta("basto",i);
-            cartasUsadas.add(carta);
-        }
-        for (int i = 1; i < 13; i++) {
-            Carta carta = new Carta("oro",i);
-            cartasUsadas.add(carta);
-        }
-        for (int i = 1; i < 13; i++) {
-            Carta carta = new Carta("espada",i);
-            cartasUsadas.add(carta);
+            for (String palo : palos) {
+                Carta carta = new Carta(palo, i);
+                cartasUsadas.add(carta);
+            }
         }
             
         Collections.shuffle(cartasUsadas);

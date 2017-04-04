@@ -50,7 +50,6 @@ public class Jugador {
     }
     
     public Carta devuelveCarta(){
-        // Falta cuerpo de metodo
         return carta;
     }
 
